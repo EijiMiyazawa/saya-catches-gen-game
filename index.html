@@ -6,6 +6,8 @@
     <title>Unity Web Player | SayaCatchesGen</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <!-- Unity のローダーより先に読み込む（中身はファイルの冒頭を参照） -->
+    <script src="TemplateData/ignore-injected-errors.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -52,12 +54,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL-PRJ-919.loader.js";
+      var loaderUrl = buildUrl + "/WebGL-PRJ-916.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/WebGL-PRJ-919.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL-PRJ-919.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL-PRJ-919.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGL-PRJ-916.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL-PRJ-916.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL-PRJ-916.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SayaCatchesGen",
